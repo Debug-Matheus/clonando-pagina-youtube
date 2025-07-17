@@ -56,3 +56,18 @@ div#nav-right-container {
 img.nav-icon {
     cursor: pointer;
 }
+section.play-video-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+section.play-video-container div.play-video-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 15px;
+}
+section.play-video-container div.play-video-item>img {
+    width: 100%;
+}
