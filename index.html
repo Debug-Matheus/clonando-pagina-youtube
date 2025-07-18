@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, 
+    width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+    <link rel="stylesheet" href="estilos/ajustes.css">
     <title>Youtube</title>
 </head>
 <body>
@@ -11,13 +16,13 @@
         
         <nav class="menu-container">
             <div id="nav-left-container">
-                <img src="icons/menu.svg" alt="menu">
-                <img src="images/nav-youtube.png" alt="logo youtube" id="logo">
+                <a href="https://www.youtube.com/"><img src="icons/menu.svg" alt="menu" target="_blank" class="nav-icon"></a>
+                <a href="https://www.youtube.com/"><img src="images/nav-youtube.png" alt="logo youtube" id="logo" target="_blank"></a>
             </div>
             <div id="nav-center-container">
-                <input type="search" name="buscar" id="ibuscar">
+                <input type="search" name="buscar" id="ibuscar" placeholder="Pesquisar">
                 <button type="submit">
-                    <img src="icons/search.svg" alt="buscar">
+                    <img src="icons/search.svg" alt="buscar" >
                 </button>
             </div>
             <div id="nav-right-container">
@@ -27,15 +32,15 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main-container">
         <section class="play-video-container">
             <div class="play-video-item">
                 <img src="images/main-video.png" alt="play">
+                <h3>Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS</h3>
                 <div class="play-video-info">
-                    <h3>Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS</h3>
-                    <img src="icons/Channel Avatar.svg" alt="dio">
-                    <p>DIO 83,3 mil visualizações</p>
-                    <a href="#">inscreva-se</a>
+                    <a href=" https://www.youtube.com/@diomakethechange"><img src="icons/Channel Avatar.svg" alt="dio"></a>
+                    <p id="name-dio"><a href=" https://www.youtube.com/@diomakethechange" style="text-decoration: none; color: #000000;" id="dio-logo2">DIO</a> <br> <span style="opacity: 0.6; font-weight: 400;">83,3 mil visualizações</span></p>
+                    <button><a href="https://www.youtube.com/@diomakethechange" style="text-decoration: none; color: azure;" target="_blank">inscreva-se</a></button>
                     <img src="icons/thumbs-up.svg" alt="like">
                     <p>2 mil</p>
                     <img src="icons/thumbs-down.svg" alt="deslike">
@@ -46,67 +51,120 @@
                     <p>Download</p>
                 </div>
             </div>
-            <div>
-                <p>28.418 visualizações  Transmitido ao vivo em 23 ago. de 2022</p>
-            </div>
-            <div>
+            <div class="play-video-description">
+                <p style= "font-weight: 600; color: #000000;">28.418 visualizações  Transmitido ao vivo em 23 ago. de 2022</p>
+                
                 <p>Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS. Para isso, criaremos uma landing page com a temática da série Stranger Things, a qual contará com a implementação de um theme switcher (light e dark) para explorarmos os mistérios do mundo invertido.</p>
             </div>
         </section>
         <section class="recomendation-container">
-            <div>
-                <img src="images/lateral-foto1.png" alt="">
-                <h3>Geração Tech Unimed - BH - Ciência de Dados</h3>
-                <p>DigitalInnovationOne</p>
-                <p>2,1 mil visualizações Transmitido há 2 dias</p>        
+            <div class="recomendation-item">
+                <a href="https://www.youtube.com/watch?v=PkEpHoXUkeM&pp=ygUuR2VyYcOnw6NvIFRlY2ggVW5pbWVkIC0gQkggLSBDacOqbmNpYSBkZSBEYWRvcw%3D%3D"><img src="images/lateral-foto1.png" alt=""></a>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=PkEpHoXUkeM&pp=ygUuR2VyYcOnw6NvIFRlY2ggVW5pbWVkIC0gQkggLSBDacOqbmNpYSBkZSBEYWRvcw%3D%3D">
+                        <h3>Geração Tech Unimed - BH - Ciência de Dados</h3>
+                    </a>
+                    <a href=" https://www.youtube.com/@diomakethechange" id="dio-logo">
+                        <p style="margin: 5px 0px;">DigitalInnovationOne</p>
+                    </a>
+                    <p>2,1 mil visualizações <br>Transmitido há 2 dias</p>
+                </div>       
             </div>
-            <div>
-                <img src="images/lateral-foto2.png" alt="">
-                <h3>Scrum Talks</h3>
-                <p>DigitalInnovationOne</p>
-                <p>1,6 mil visualizações Transmitido há 3 dias</p>
+            <div class="recomendation-item">
+                <a href="https://www.youtube.com/watch?v=0kpfMxtX7M4&pp=ygUgU2NydW0gVGFsa3MgRGlnaXRhbElubm92YXRpb25PbmU%3D"><img src="images/lateral-foto2.png" alt=""></a>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=0kpfMxtX7M4&pp=ygUgU2NydW0gVGFsa3MgRGlnaXRhbElubm92YXRpb25PbmU%3D">
+                        <h3>Scrum Talks</h3>
+                    </a>
+                    <a href=" https://www.youtube.com/@diomakethechange" id="dio-logo">
+                        <p style="margin: 5px 0px;">DigitalInnovationOne</p>
+                    </a>
+                    <p>1,6 mil visualizações <br>Transmitido há 3 dias</p>
+                </div>
             </div>
-            <div>
-                <img src="images/lateral-foto3.png" alt="">
-                <h3>Machine Learning Avançado - Fast Track</h3>
-                <p>DigitalInnovationOne</p>
-                <p>1,7 mil visualizações Transmitido há 4 dias</p>
+            <div class="recomendation-item">
+                <a href="https://www.youtube.com/watch?v=Ru9AyUPSNPk&pp=ygUnTWFjaGluZSBMZWFybmluZyBBdmFuw6dhZG8gLSBGYXN0IFRyYWNr"><img src="images/lateral-foto3.png" alt=""></a>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=Ru9AyUPSNPk&pp=ygUnTWFjaGluZSBMZWFybmluZyBBdmFuw6dhZG8gLSBGYXN0IFRyYWNr">
+                        <h3>Machine Learning Avançado - Fast Track</h3>
+                    </a>
+                    <a href=" https://www.youtube.com/@diomakethechange" id="dio-logo">
+                        <p style="margin: 5px 0px;">DigitalInnovationOne</p>
+                    </a>
+                    <p>1,7 mil visualizações <br>Transmitido há 4 dias</p>
+                </div>
             </div>
-            <div>
-                <img src="images/lateral-foto4.png" alt="">
-                <h3>Global Skills #2 - Project Planning</h3>
-                <p>DigitalInnovationOne</p>
-                <p>971 visualizações Transmitido há 5 dias</p>
+            <div class="recomendation-item">
+                <a href="https://www.youtube.com/watch?v=gTYMAoX_27c&pp=ygUjR2xvYmFsIFNraWxscyAjMiAtIFByb2plY3QgUGxhbm5pbmc%3D"><img src="images/lateral-foto4.png" alt=""></a>
+                <div class="video-info">
+                    <a href=" https://www.youtube.com/watch?v=gTYMAoX_27c&pp=ygUjR2xvYmFsIFNraWxscyAjMiAtIFByb2plY3QgUGxhbm5pbmc%3D">
+                        <h3>Global Skills #2 - Project Planning</h3>
+                    </a>
+                    <a href="https://www.youtube.com/@diomakethechange" id="dio-logo">
+                        <p style="margin: 5px 0px;">DigitalInnovationOne</p>
+                    </a>
+                    <p>971 visualizações <br>Transmitido há 5 dias</p>
+                </div>
             </div>
-            <div>
-                <img src="images/lateral-foto5.png" alt="">
-                <h3>Como aprender a programar Python do ZERO</h3>
-                <p>DigitalInnovationOne</p>
-                <p>711 visualizações Transmitido há 6 dias</p>
+            <div class="recomendation-item">
+                <a href="https://www.youtube.com/watch?v=LWyxFrwSGoM&pp=ygU9Q29tbyBhcHJlbmRlciBhIHByb2dyYW1hciBQeXRob24gZG8gWkVSTyBEaWdpdGFsSW5ub3ZhdGlvbk9uZQ%3D%3D"><img src="images/lateral-foto5.png" alt=""></a>
+                <div class="video-info ">
+                    <a href=" https://www.youtube.com/watch?v=LWyxFrwSGoM&pp=ygU9Q29tbyBhcHJlbmRlciBhIHByb2dyYW1hciBQeXRob24gZG8gWkVSTyBEaWdpdGFsSW5ub3ZhdGlvbk9uZQ%3D%3D">
+                        <h3>Como aprender a programar Python do ZERO</h3>
+                    </a>
+                    <a href=" https://www.youtube.com/@diomakethechange" id="dio-logo">
+                        <p style="margin: 5px 0px;">DigitalInnovationOne</p>
+                    </a>
+                    <p>711 visualizações <br>Transmitido há 6 dias</p>
+                </div>
             </div>
-            <div>
-                <img src="images/lateral-foto6.png" alt="">
-                <h3>Geração Tech Unimed - BH - Ciência de Dados</h3>
-                <p>DigitalInnovationOne</p>
-                <p>2,1 mil visualizações Transmitido há 2 dias</p>
+            <div class="recomendation-item">
+                <a href=" https://www.youtube.com/watch?v=PkEpHoXUkeM&pp=ygUuR2VyYcOnw6NvIFRlY2ggVW5pbWVkIC0gQkggLSBDacOqbmNpYSBkZSBEYWRvcw%3D%3D"><img src="images/lateral-foto6.png" alt=""></a>
+                <div class="video-info">
+                    <a href=" https://www.youtube.com/watch?v=PkEpHoXUkeM&pp=ygUuR2VyYcOnw6NvIFRlY2ggVW5pbWVkIC0gQkggLSBDacOqbmNpYSBkZSBEYWRvcw%3D%3D">
+                        <h3>Geração Tech Unimed - BH - Ciência de Dados</h3>
+                    </a>
+                    <a href=" https://www.youtube.com/@diomakethechange" id="dio-logo">
+                        <p style="margin: 5px 0px;">DigitalInnovationOne</p>
+                    </a>
+                    <p>2,1 mil visualizações <br>Transmitido há 2 dias</p>
+                </div>
             </div>
-            <div>
-                <img src="images/lateral-foto7.png" alt="">
-                <h3>Scrum Talks</h3>
-                <p>DigitalInnovationOne</p>
-                <p>1,6 mil visualizações Transmitido há 3 dias</p>
+            <div class="recomendation-item">
+                <a href=" https://www.youtube.com/watch?v=0kpfMxtX7M4&pp=ygUgU2NydW0gVGFsa3MgRGlnaXRhbElubm92YXRpb25PbmU%3D"><img src="images/lateral-foto7.png" alt=""></a>
+                <div class="video-info">
+                    <a href=" https://www.youtube.com/watch?v=0kpfMxtX7M4&pp=ygUgU2NydW0gVGFsa3MgRGlnaXRhbElubm92YXRpb25PbmU%3D">
+                        <h3>Scrum Talks</h3>
+                    </a>
+                    <a href=" https://www.youtube.com/@diomakethechange" id="dio-logo">
+                        <p style="margin: 5px 0px;">DigitalInnovationOne</p>
+                    </a>
+                    <p>1,6 mil visualizações <br>Transmitido há 3 dias</p>
+                </div>
             </div>
-            <div>
-                <img src="images/lateral-foto8.png" alt="">
-                <h3>Machine Learning Avançado - Fast Track</h3>
-                <p>DigitalInnovationOne</p>
-                <p>1,7 mil visualizações Transmitido há 4 dias</p>
+            <div class="recomendation-item"> 
+                <a href=" https://www.youtube.com/watch?v=Ru9AyUPSNPk&pp=ygUnTWFjaGluZSBMZWFybmluZyBBdmFuw6dhZG8gLSBGYXN0IFRyYWNr"><img src="images/lateral-foto8.png" alt=""></a>
+                <div class="video-info">
+                    <a href=" https://www.youtube.com/watch?v=Ru9AyUPSNPk&pp=ygUnTWFjaGluZSBMZWFybmluZyBBdmFuw6dhZG8gLSBGYXN0IFRyYWNr">
+                        <h3>Machine Learning Avançado - Fast Track</h3>
+                    </a>
+                    <a href=" https://www.youtube.com/@diomakethechange" id="dio-logo">
+                        <p style="margin: 5px 0px;">DigitalInnovationOne</p>
+                    </a>
+                    <p>1,7 mil visualizações <br>Transmitido há 4 dias</p>
+                </div>
             </div>
-            <div>
-                <img src="images/lateral-foto9.png" alt="">
-                <h3>Global Skills #2 - Project Planning</h3>
-                <p>DigitalInnovationOne</p>
-                <p>971 visualizações Transmitido há 5 dias</p>
+            <div class="recomendation-item">
+                <a href=" https://www.youtube.com/watch?v=gTYMAoX_27c&pp=ygUjR2xvYmFsIFNraWxscyAjMiAtIFByb2plY3QgUGxhbm5pbmc%3D"><img src="images/lateral-foto9.png" alt=""></a>
+                <div class="video-info">
+                    <a href=" https://www.youtube.com/watch?v=gTYMAoX_27c&pp=ygUjR2xvYmFsIFNraWxscyAjMiAtIFByb2plY3QgUGxhbm5pbmc%3D">
+                        <h3>Global Skills #2 - Project Planning</h3>
+                    </a>
+                    <a href=" https://www.youtube.com/@diomakethechange" id="dio-logo" id="dio-logo">
+                        <p style="margin: 5px 0px;">DigitalInnovationOne</p>
+                    </a>
+                    <p>971 visualizações <br>Transmitido há 5 dias</p>
+                </div>
             </div>
         </section>
     </main>

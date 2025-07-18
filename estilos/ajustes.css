@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* Pequenos ajustes */
+.nav-icon{
+    transition: all 0.2s ease-in-out;
+}
+.nav-icon:hover{
+    background-color: rgba(169, 169, 169, 0.336);
+    border-radius: 48%;
+
+}
+
+div.video-info a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+div.video-info a:hover{
+    text-decoration: underline;
+}
+div.recomendation-item img{
+    transition: all 0.3s ease-in-out;
+}
+div.recomendation-item img:hover{
+    transform: scale(1.05);
+}
+div.video-info a#dio-logo{
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+div.video-info a#dio-logo:hover{
+    opacity: 1;
+}
+#dio-logo2:hover{
+    text-decoration: underline;
+}

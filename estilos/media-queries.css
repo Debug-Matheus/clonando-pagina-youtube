@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 636px) {
+   section.play-video-container div.play-video-item{
+     width: 95%;
+   }
+   section.play-video-container div.play-video-item>img{
+       width: 95%;
+   }
+   div.play-video-info{
+       width: 95%;
+   }
+   div.play-video-description{
+       width: 95%;
+   }
+}
+@media screen and (min-width: 1024px) {
+  main.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    align-items: start; 
+    
+  }
+  div#nav-left-container{
+    margin-left: 25px;
+  }
+  #nav-center-container button:hover{
+    background-color: #cccccc88;
+  }
+  section.play-video-container{
+    padding: none;
+    min-width: 400px;
+    width: 80%;
+  }
+  section.recomendation-container{
+    flex-direction: column;
+    align-items: start;
+  }
+  div.recomendation-item{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    gap: 10px;
+    margin-top: 12px;
+    padding: 0px 13px;
+    align-items: center;
+    
+  }
+  div.recomendation-item img{
+    min-width: 50px;
+    
+  }
+
+ div.recomendation-item div.video-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+ }
+}
+/* aumentando input do nav e botão */
+@media screen and (min-width: 500px) {
+  #nav-center-container input {
+    display: inline-block;
+    width: 120px;
+  }
+
+  #nav-center-container button {
+    border-radius: 0 20px 20px 0;
+    border-left: none;
+    background-color: rgba(128, 128, 128, 0.11);
+  }
+}
+
+/* aumentando input do nav */
+@media screen and (min-width: 768px) {
+  #nav-center-container input {
+    width: 240px;
+    height: 40px;
+  }
+  #nav-center-container button {
+    border: 1px solid #ccc;
+    border-radius: 0 20px 20px 0;
+    border-left: none;
+    height: 40px;
+    width: 70px;
+    background-color: rgba(128, 128, 128, 0.11);
+  }
+}
+
+/* input do nav em tamanho total*/
+@media screen and (min-width: 1024px) {
+  #nav-center-container input {
+    width: 40%;
+    height: 40px;
+    
+  }
+  #nav-center-container button {
+    border: 1px solid #ccc;
+    border-radius: 0 20px 20px 0;
+    border-left: none;
+    height: 40px;
+    width: 70px;
+    background-color: rgba(128, 128, 128, 0.11);
+  }
+}
