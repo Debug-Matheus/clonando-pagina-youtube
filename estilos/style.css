@@ -133,7 +133,7 @@ div.play-video-info > button {
     font-weight: 600;
     line-height: 16px;
     text-transform: uppercase;
-    padding: 9px 16px;
+    padding: 9px 19px;
     transition: background-color 0.3s ease;
 }
 div.play-video-info > button:hover {
