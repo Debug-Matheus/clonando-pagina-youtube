@@ -2,6 +2,7 @@
 
 Este projeto é uma reprodução da interface do YouTube, focando especialmente na versão **mobile-first**, com layout adaptativo para diferentes tamanhos de tela.
 
+- [Clique Aqui](https://youtube-flexbox-dio.netlify.app/), para acessar página.
 ---
 
 ## 📱 Tecnologias Utilizadas
