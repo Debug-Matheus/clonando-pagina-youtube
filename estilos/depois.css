@@ -1,0 +1,25 @@
+/* div#nav-center-container {
+    display: flex;
+    align-items: center;
+    flex:1;
+    max-width: 600px;
+    min-width: 200px;
+    justify-content: center;
+}
+#nav-center-container input {
+    height: 32px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+#nav-center-container button {
+    height: 32px;
+    width: 40px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+} */

@@ -3,8 +3,13 @@
 
 @media screen and (min-width: 636px) {
    section.play-video-container div.play-video-item{
-     width: 95%;
+       width: 95%;
    }
+   div.play-video-item > iframe{
+    max-width: 300px;
+    height: 500px;
+    margin-top: 19px;
+  }
    section.play-video-container div.play-video-item>img{
        width: 95%;
    }
@@ -22,6 +27,11 @@
     justify-content: space-between;   
     align-items: start; 
     
+  }
+  div.play-video-item > iframe{
+    max-width: 300px;
+    height: 500px;
+    margin-top: 19px;
   }
   div#nav-left-container{
     margin-left: 25px;
@@ -43,14 +53,12 @@
     flex-flow: row;
     width: 100%;
     gap: 10px;
-    margin-top: 12px;
     padding: 0px 13px;
     align-items: center;
     
   }
   div.recomendation-item img{
     min-width: 50px;
-    
   }
 
  div.recomendation-item div.video-info{
